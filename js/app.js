@@ -84,10 +84,10 @@ let testArray = [2, 3, 4];
 
 function sumArray(sumArr) {
 
-  let mySumThree = sum(testArray[0], testArray[1])[0];
-  let mySumFour = sum(mySumThree, testArray[2])[0];
+  let mySumThree = sum(sumArr[0], sumArr[1])[0];
+  let mySumFour = sum(mySumThree, sumArr[2])[0];
 
-  let myStrFour = `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${mySumFour} is their sum.`;
+  let myStrFour = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${mySumFour} is their sum.`;
 
   return [mySumFour, myStrFour];
 }
